@@ -32,8 +32,8 @@ runDb query = do
     liftIO $ runSqlPool query pool
 
 -- データベースのマイグレーションを実行する関数
-runMigration :: MonadIO m => Pool SqlBackend -> m ()
-runMigration pool = liftIO $ runSqlPool (runMigration migrateAll) pool
+runDBMigration :: MonadIO m => Pool SqlBackend -> m ()
+runDBMigration pool = liftIO $ runSqlPool (runMigration migrateAll) pool
 
 -- 全てのメモを取得
 getAllNotes :: (MonadReader (Pool SqlBackend) m, MonadIO m) => m [Entity Note]

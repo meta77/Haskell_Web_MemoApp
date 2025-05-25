@@ -27,7 +27,7 @@ main = do
     -- データベースコネクションプールを作成
     pool <- createPool
     -- データベースマイグレーションを実行
-    runMigration pool
+    runDBMigration pool
     putStrLn "Starting server on port 3000..."
 
     -- Scottyアプリケーションを起動
