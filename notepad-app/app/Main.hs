@@ -1,3 +1,5 @@
+-- ２０２５/5/26 エラーなるまま
+
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GADTs             #-}
 {-# LANGUAGE TypeApplications  #-}
