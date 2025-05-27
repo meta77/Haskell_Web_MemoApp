@@ -23,7 +23,7 @@ import qualified DB as DB
 -- AppM の定義
 type AppM = ReaderT (Pool SqlBackend) IO
 
--- ScottyAction の型エイリアスを削除
+-- ScottyActionの型エイリアスを削除
 
 -- DBアクションを実行し、ScottyT IO にリフトするヘルパー
 -- 戻り値の型を Scotty.ScottyT Text IO a に変更
