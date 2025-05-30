@@ -5,7 +5,7 @@ module Main (main) where
 import Web.Scotty
 import Network.Wai.Middleware.Cors (simpleCors) -- CORSミドルウェア
 import Control.Monad.IO.Class (liftIO)          -- initDBの実行のため
-import Network.HTTP.Types.Status (status404)
+import Network.HTTP.Types.Status (status404) -- 忘れずに追加
 
 import qualified MemoApp0529.Core as Core
 import qualified MemoApp0529.Handler as H -- ハンドラ関数を修飾名で呼び出す
